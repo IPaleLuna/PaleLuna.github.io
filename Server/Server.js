@@ -5,7 +5,7 @@ var app = express();
 
 app.use(express.static(path.join(__dirname, 'Public')))
 
-const CreatePath = (page) => path.resolve(`${page}.html`);
+const CreatePath = (page) => path.resolve('..', 'Public', 'Views', `${page}.html`);
 
 app.get('/', (req,res) => {
     res.sendFile(CreatePath("index"));
