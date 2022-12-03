@@ -3,13 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="..\CSS\HeaderStyle.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <title>Солечная система</title>
 </head>
 <body>
 
-    <h1>Hello World!</h1>
+    <header id="Header">
+        <div id="Logo">
+            <img src="..\Materials\LogoIcon\solar-system.png">
+            <h2 id="logoText">Solar System</h2>
+        </div>
+
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" id="menuBars"><i class="fas fa-bars"></i></label>
+        <nav id="Havigation">
+            <ul>
+                <li><a href="#" class="active">Главная</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Оставить отзыв</a></li>
+            </ul>            
+        </nav>
+    </header>
     
 </body>
 </html>
