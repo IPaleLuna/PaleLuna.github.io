@@ -3,7 +3,7 @@ const express = require("express");
 var app = express();
 
 
-app.use(express.static(path.join(__dirname, 'Public')))
+app.use(express.static(path.join(__dirname, '../Public')))
 
 const CreatePath = (page) => path.resolve('..', 'Public', 'Views', `${page}.html`);
 
