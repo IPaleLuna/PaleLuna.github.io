@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=PT+Sans+Narrow&display=swap');
+
 footer {
     width: 100vw;
     height: auto;
 
-    padding-top: 40px;
+    padding-top: 25px;
+    
+    font-family: 'Noto Sans', sans-serif;
     color: #FFFF;
 
     background: #111;
@@ -27,7 +31,7 @@ footer {
 }
 .footer-container p {
     max-width: 500px;
-    margin: 10px auto;
+    margin: 5px auto;
     line-height: 28px;
     font-size: 16px;
 
@@ -36,7 +40,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 3rem 0;
+    margin: 1rem 0 2rem 0;
 }
 .footer-container .contacts-socials li {
     margin: 0 25px;
@@ -64,8 +68,10 @@ footer {
     background: rgb(49, 49, 49);
 }
 .footer-bottom p {
-    font-size: 14px;
+    font-size: 16px;
     word-spacing: 2px;
+
+    font-family: 'PT Sans Narrow', sans-serif;
 
     text-transform: capitalize;
 }
