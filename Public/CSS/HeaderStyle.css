@@ -4,10 +4,12 @@
     position: fixed;
     display: flex;
     align-items: center;
-    background: #0082e6; /*Изменить*/
+    background: #1B0044; /*Изменить*/
 
     width: 100%;
     height: 80px;
+
+    font-family: 'Oswald', sans-serif;
 
     z-index: 10000;
 }
@@ -72,7 +74,7 @@
 }
 
 #Havigation ul li .active, nav ul li a:hover {
-    background: #1b9bff; /*Изменить*/
+    background: #8F1383; /*Изменить*/
 }
 #menuBars {
     float: right;
@@ -130,7 +132,7 @@
         width: 100%;
         height: 100vh;
 
-        background: #2c3e50;
+        background: #001F3F;
 
         transition: all 0.5s;
     }
@@ -144,7 +146,7 @@
 
     nav ul li .active, nav ul li a:hover {
         background: none;
-        color: #0082e6;
+        color: #8F1383;
     }
 
     #checkbox:checked ~ #Havigation {
