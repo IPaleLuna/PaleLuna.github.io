@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Rubik:wght@600&display=swap');
 
 #Header {
+    position: fixed;
     display: flex;
     align-items: center;
     background: #0082e6; /*Изменить*/
 
     width: 100%;
     height: 80px;
+
+    z-index: 10000;
 }
 
 #Logo {
