@@ -9,7 +9,7 @@ footer {
     font-family: 'Noto Sans', sans-serif;
     color: #FFFF;
 
-    background: #111;
+    background: #1B0044;
 }
 
 .footer-container {
@@ -65,7 +65,7 @@ footer {
 
     text-align: center;
 
-    background: rgb(49, 49, 49);
+    background: #1F024C;
 }
 .footer-bottom p {
     font-size: 16px;
