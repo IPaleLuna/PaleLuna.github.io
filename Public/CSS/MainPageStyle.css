@@ -1,3 +1,227 @@
 #MainPageMenu {
+    display: grid;
+
+    align-items: center;
+
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 0.8fr 1.2fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 2px 2px; 
+    grid-template-areas: 
+    "Discription Solar-System" 
+    "Object-list Solar-System"; 
+
     height: 100vh;
 }
+
+.Solar-System { 
+    grid-area: Solar-System; 
+    justify-self: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    
+    width: 90vmin;
+    height: 90vmin;
+
+    background: rgb(37, 35, 35);
+}
+
+.Solar-System::before
+{
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    height: 9vmin;
+    width: 9vmin;
+
+    background: yellow;
+    border-radius: 50%;
+
+    box-shadow: 0 0 20px yellow;
+
+    transform: translateX(-50%);
+}
+
+.Solar-System .circle
+{
+    display: block;
+    position: absolute;
+
+    width: 85vmin;
+    height: 85vmin;
+
+    border: 0.25vmin solid #111;
+    border-radius: 50%;
+
+    animation: rotateAroundOrbit 15s linear infinite;
+
+    z-index: 3;
+
+    transition: 0.3s ease;
+}
+.Solar-System .circle::before {
+    content: "";
+
+    position: absolute;
+
+    top: -1.5vmin;
+    left: 50%;
+
+    width: 2.3vmin;
+    height: 2.3vmin;
+
+    background: var(--clr);
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 1vmin var(--clr);
+
+    transform: translateX(-50%);
+}
+.Solar-System .circle:hover {
+    border: 0.25vmin solid var(--clr);
+}
+
+
+@keyframes rotateAroundOrbit {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*---------PLANETS---------*/
+
+.Solar-System .Mercury
+{
+    width: 16.5vmin;
+    height: 16.5vmin;
+
+    z-index: 10;
+
+    animation: rotateAroundOrbit 2s linear infinite;
+}
+.Solar-System .Mercury::before
+{
+    top: -0.7vmin;
+
+    width: 1.2vmin;
+    height: 1.2vmin;
+}
+
+.Solar-System .Venus
+{
+    width: 22.5vmin;
+    height: 22.5vmin;
+
+    z-index: 9;
+
+    animation: rotateAroundOrbit 2.5s linear infinite;
+}
+.Solar-System .Venus::before
+{
+    top: -0.8vmin;
+
+    width: 1.5vmin;
+    height: 1.5vmin;
+}
+
+.Solar-System .Earth
+{
+    width: 30.5vmin;
+    height: 30.5vmin;
+
+    z-index: 8;
+
+    animation: rotateAroundOrbit 3s linear infinite;
+}
+.Solar-System .Earth::before
+{
+    top: -0.9vmin;
+
+    width: 1.7vmin;
+    height: 1.7vmin;
+}
+
+.Solar-System .Mars
+{
+    width: 40.5vmin;
+    height: 40.5vmin;
+
+    z-index: 7;
+
+    animation: rotateAroundOrbit 3.5s linear infinite;
+}
+.Solar-System .Mars::before
+{
+    top: -0.8vmin;
+
+    width: 1.4vmin;
+    height: 1.4vmin;
+}
+
+.Solar-System .Jupiter
+{
+    width: 50.5vmin;
+    height: 50.5vmin;
+
+    z-index: 6;
+
+    animation: rotateAroundOrbit 5.5s linear infinite;
+}
+.Solar-System .Jupiter::before
+{
+    top: -1.5vmin;
+
+    width: 3vmin;
+    height: 3vmin;
+}
+
+.Solar-System .Saturn
+{
+    width: 60.5vmin;
+    height: 60.5vmin;
+
+    z-index: 5;
+
+    animation: rotateAroundOrbit 8s linear infinite;
+}
+.Solar-System .Saturn::before
+{
+    top: -1.5vmin;
+
+    width: 2.7vmin;
+    height: 2.7vmin;
+}
+
+.Solar-System .Uranium
+{
+    width: 70.5vmin;
+    height: 70.5vmin;
+
+    z-index: 4;
+
+    animation: rotateAroundOrbit 10s linear infinite;
+}
+.Solar-System .Uranium::before
+{
+    top: -1.5vmin;
+
+    width: 2.5vmin;
+    height: 2.5vmin;
+}
+
+
+
+
+.Discription { grid-area: Discription; }
+.Object-list { grid-area: Object-list; }
