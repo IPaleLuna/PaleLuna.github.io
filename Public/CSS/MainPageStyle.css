@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,700&family=Open+Sans&display=swap');
+
 #MainPageMenu {
     display: grid;
 
@@ -11,7 +13,9 @@
     "Discription Solar-System" 
     "Object-list Solar-System"; 
 
-    height: 100vh;
+    height: auto;
+
+    padding: 10vmin 0 10vmin 3vmin;
 }
 
 .Solar-System { 
@@ -26,27 +30,30 @@
     
     width: 90vmin;
     height: 90vmin;
-
-    background: rgb(37, 35, 35);
 }
 
-.Solar-System::before
+.Solar-System .Sun
 {
-    content: "";
-
     position: absolute;
 
     left: 50%;
 
-    height: 9vmin;
-    width: 9vmin;
+    height: 10%;
+    width: 10%;
 
-    background: yellow;
+    background: var(--clr);
     border-radius: 50%;
 
-    box-shadow: 0 0 20px yellow;
+    box-shadow: 0 0 1vmin var(--clr);
 
     transform: translateX(-50%);
+
+    transition: all 0.5s ease;
+
+    z-index: 11;
+}
+.Solar-System .Sun:hover {
+    box-shadow: 0 0 3vmin var(--clr);
 }
 
 .Solar-System .circle
@@ -54,13 +61,13 @@
     display: block;
     position: absolute;
 
-    width: 85vmin;
-    height: 85vmin;
+    width: 96%;
+    height: 96%;
 
-    border: 0.25vmin solid #111;
+    border: 0.5vmin solid #615DEC;
     border-radius: 50%;
 
-    animation: rotateAroundOrbit 15s linear infinite;
+    animation: rotateAroundOrbit 40s linear infinite;
 
     z-index: 3;
 
@@ -86,9 +93,8 @@
     transform: translateX(-50%);
 }
 .Solar-System .circle:hover {
-    border: 0.25vmin solid var(--clr);
+    border: 0.5vmin solid var(--clr);
 }
-
 
 @keyframes rotateAroundOrbit {
     0% {
@@ -103,16 +109,16 @@
 
 .Solar-System .Mercury
 {
-    width: 16.5vmin;
-    height: 16.5vmin;
+    width: 17.5%;
+    height: 17.5%;
 
     z-index: 10;
 
-    animation: rotateAroundOrbit 2s linear infinite;
+    animation: rotateAroundOrbit 7s linear infinite;
 }
 .Solar-System .Mercury::before
 {
-    top: -0.7vmin;
+    top: -0.9vmin;
 
     width: 1.2vmin;
     height: 1.2vmin;
@@ -120,16 +126,16 @@
 
 .Solar-System .Venus
 {
-    width: 22.5vmin;
-    height: 22.5vmin;
+    width: 25%;
+    height: 25%;
 
     z-index: 9;
 
-    animation: rotateAroundOrbit 2.5s linear infinite;
+    animation: rotateAroundOrbit 8s linear infinite;
 }
 .Solar-System .Venus::before
 {
-    top: -0.8vmin;
+    top: -1vmin;
 
     width: 1.5vmin;
     height: 1.5vmin;
@@ -137,16 +143,16 @@
 
 .Solar-System .Earth
 {
-    width: 30.5vmin;
-    height: 30.5vmin;
+    width: 35%;
+    height: 35%;
 
     z-index: 8;
 
-    animation: rotateAroundOrbit 3s linear infinite;
+    animation: rotateAroundOrbit 10s linear infinite;
 }
 .Solar-System .Earth::before
 {
-    top: -0.9vmin;
+    top: -1vmin;
 
     width: 1.7vmin;
     height: 1.7vmin;
@@ -154,16 +160,16 @@
 
 .Solar-System .Mars
 {
-    width: 40.5vmin;
-    height: 40.5vmin;
+    width: 45%;
+    height: 45%;
 
     z-index: 7;
 
-    animation: rotateAroundOrbit 3.5s linear infinite;
+    animation: rotateAroundOrbit 10.5s linear infinite;
 }
 .Solar-System .Mars::before
 {
-    top: -0.8vmin;
+    top: -0.9vmin;
 
     width: 1.4vmin;
     height: 1.4vmin;
@@ -171,16 +177,16 @@
 
 .Solar-System .Jupiter
 {
-    width: 50.5vmin;
-    height: 50.5vmin;
+    width: 60%;
+    height: 60%;
 
     z-index: 6;
 
-    animation: rotateAroundOrbit 5.5s linear infinite;
+    animation: rotateAroundOrbit 20s linear infinite;
 }
 .Solar-System .Jupiter::before
 {
-    top: -1.5vmin;
+    top: -1.6vmin;
 
     width: 3vmin;
     height: 3vmin;
@@ -188,16 +194,16 @@
 
 .Solar-System .Saturn
 {
-    width: 60.5vmin;
-    height: 60.5vmin;
+    width: 70%;
+    height: 70%;
 
     z-index: 5;
 
-    animation: rotateAroundOrbit 8s linear infinite;
+    animation: rotateAroundOrbit 22s linear infinite;
 }
 .Solar-System .Saturn::before
 {
-    top: -1.5vmin;
+    top: -1.6vmin;
 
     width: 2.7vmin;
     height: 2.7vmin;
@@ -205,23 +211,61 @@
 
 .Solar-System .Uranium
 {
-    width: 70.5vmin;
-    height: 70.5vmin;
+    width: 85%;
+    height: 85%;
 
     z-index: 4;
 
-    animation: rotateAroundOrbit 10s linear infinite;
+    animation: rotateAroundOrbit 25s linear infinite;
 }
 .Solar-System .Uranium::before
 {
-    top: -1.5vmin;
+    top: -1.6vmin;
 
     width: 2.5vmin;
     height: 2.5vmin;
 }
 
+/*-------------------------*/
+
+.Discription { 
+    grid-area: Discription; 
+}
+.Discription h3 {
 
 
+    padding-bottom: 15px;
 
-.Discription { grid-area: Discription; }
+    font-size: 10vmin;
+    font-family: 'Nunito', sans-serif;
+}
+.Discription p {
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3vmin;
+
+    line-height: 3.2vmin;
+
+    color: #76E2F4;
+
+}
+
 .Object-list { grid-area: Object-list; }
+
+
+@media (max-width: 1200px) {
+    #MainPageMenu {
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1.2fr; 
+        grid-template-rows: auto auto 0.6fr; 
+        gap: 2px 2px; 
+        grid-template-areas: 
+          "Solar-System"
+          "Discription"
+          "Object-list"; 
+    }
+    .Solar-System {
+        width: 50vmin;
+        height: 50vmin;
+    }
+}
