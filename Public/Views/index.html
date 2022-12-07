@@ -21,7 +21,7 @@
         <header id="Header">
             <div id="Logo">
                 <img src="..\Materials\LogoIcon\solar-system.png">
-                <h2 id="logoText">ПРОКосмос</h2>
+                <h2 id="logoText">ПРОкосмос</h2>
             </div>
 
             <input type="checkbox" id="checkbox">
@@ -41,23 +41,33 @@
 
         <section id="MainPageMenu">
             <div class="Discription">
-                <h3>ПРОКосмос</h3>
+                <h3><span style="color:yellow">ПРО</span>космос</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eveniet adipisci blanditiis ab aliquam harum. Vel repudiandae quos quaerat, recusandae culpa, sed, dolor incidunt tempore ducimus esse quis? Non tempora, suscipit laudantium facilis sed iure excepturi veritatis facere officiis! Eos accusamus culpa voluptates sapiente dolore excepturi ab corporis cupiditate mollitia!
+                    Твой путеводитель по Cолнечной системе! 
                 </p>
             </div>
             <div class="Object-list">
-                <ul>
-                    <li>Солнце</li>
-                    <li>Меркурий</li>
-                    <li>Венера</li>
-                    <li>Земля</li>
-                    <li>Марс</li>
-                    <li>Юпитер</li>
-                    <li>Сатурн</li>
-                    <li>Уран</li>
-                    <li>Нептун</li>
-                </ul>
+                <h2>Наши статьи</h2>
+                <input type="button" id="nxt-btn">
+                <label for="nxt-btn" class="Lnxt-btn"><i class="fa-solid fa-caret-right"></i></label>
+                <input type="button" id="pre-btn">
+                <label for="pre-btn" class="Lpre-btn"><i class="fa-solid fa-caret-left"></i></label>
+                <div class="Planets-Container">
+                    <a class="PlanetCard EarthCard" href="https://ru.wikipedia.org/wiki/Земля" target="_blank" style="--clr:#03a9f4">
+                        <h2>Земля</h2>
+                        <div class="Planet-container" style="--clr:#03a9f4">
+                            <div class="loader" style="--clr:#03a9f4; --clr2:#87CEEB"><span></span></div>
+                            <div class="PlanetImg EarthIMG" style="--clr:#03a9f4"></div>
+                        </div>
+                    </a>
+                    <a class="PlanetCard MarsCard" href="https://ru.wikipedia.org/wiki/Марс" target="_blank" style="--clr:#FF4500">
+                        <h2>Марс</h2>
+                        <div class="Planet-container" style="--clr:#FF4500">
+                            <div class="loader" style="--clr:#FF4500; --clr2:#FFA07A"><span></span></div>
+                            <div class="PlanetImg MarsIMG" style="--clr:#FF4500"></div>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="Solar-System">
                 <a class="Sun" href="https://ru.wikipedia.org/wiki/Солнце" target="_blank" style="--clr:#ffff00"></a>
@@ -74,7 +84,7 @@
 
         <footer>
             <div class="footer-container">
-                <h3>ПРОКосмос</h3>
+                <h3>ПРОкосмос</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae laborum aut sint corporis eum.</p>
                 <ul class="contacts-socials">
                     <li><a href="https://vk.com/redstar_oc" target="_blank"><i class="fa-brands fa-vk"></i></a></li>
@@ -87,5 +97,7 @@
             </div>
         </footer>
         
+
+        <script src="..\JS\CarouselSlider.js"></script>
     </body>
 </html>

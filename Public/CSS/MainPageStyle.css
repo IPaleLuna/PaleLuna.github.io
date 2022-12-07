@@ -13,9 +13,8 @@
     "Discription Solar-System" 
     "Object-list Solar-System"; 
 
-    height: auto;
+    min-height: 100vh;
 
-    padding: 10vmin 0 10vmin 3vmin;
 }
 
 .Solar-System { 
@@ -230,15 +229,26 @@
 
 .Discription { 
     grid-area: Discription; 
+
+    align-self: center;
+
+    margin-left: 2vh;
+    padding: 40px;
+
+    box-shadow: -1px 5px 11px 9px #301781c9;
+    background: #301781c9;
 }
 .Discription h3 {
-
+    position: relative;
 
     padding-bottom: 15px;
 
     font-size: 10vmin;
     font-family: 'Nunito', sans-serif;
+
+    color: yellow;
 }
+
 .Discription p {
     
     font-family: 'Open Sans', sans-serif;
@@ -246,19 +256,214 @@
 
     line-height: 3.2vmin;
 
-    color: #76E2F4;
-
 }
 
-.Object-list { grid-area: Object-list; }
+.Object-list { 
+    grid-area: Object-list;
+    justify-self: center;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    font-family: 'Nunito', sans-serif;
+}
+.Object-list h2
+{
+    font-size: 5vmin;
+    padding-bottom: 2vmin;
+}
+.Object-list input {
+    display: none;
+}
+
+.Object-list label {
+    position: absolute;
+    top: 60%;
+}
+
+.Object-list label .fa-solid{
+    color: #FFF;
+    font-size: 10vmin;
+
+    transform: translateY(-25%);
+
+    cursor: pointer;
+
+
+}
+.Object-list .Lnxt-btn {
+    right: 15vmin;
+}
+.Object-list .Lpre-btn {
+    left: 15vmin;
+}
+
+.Planets-Container {
+    align-self: center;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 27vmin;
+
+    scroll-behavior: smooth;
+
+    overflow: hidden;
+}
+
+.Object-list .Planets-Container .PlanetCard {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    width: auto;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--clr2);
+
+    color: #FFF;
+}
+.Object-list .PlanetCard h2 {
+    font-size: 4vmin;
+    font-weight: 600;
+}
+
+.Object-list .PlanetCard .Planet-container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.Object-list .Planet-container .loader {
+    position: relative;
+    width: 27vmin;
+    height: 27vmin  ;
+
+    border-radius: 50%;
+
+    animation: loaderAnimation 5s linear infinite;
+}
+@keyframes loaderAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.Object-list .PlanetCard .loader::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 50%;
+    height: 100%;
+
+    background: linear-gradient(to top, transparent, var(--clr));
+    background-size: 200px 360px;
+    background-repeat: no-repeat;
+
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+.Object-list .PlanetCard .loader::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 1vmin;
+    height: 1vmin;
+
+    background: var(--clr2);
+
+    border-radius: 50%;
+    z-index: 10;
+
+    box-shadow: 0 0 10px var(--clr2),
+                0 0 20px var(--clr2),
+                0 0 30px var(--clr2),
+                0 0 40px var(--clr2),
+                0 0 50px var(--clr2),
+                0 0 60px var(--clr2),
+                0 0 70px var(--clr2),
+                0 0 80px var(--clr2),
+                0 0 90px var(--clr2),
+                0 0 100px var(--clr2);
+
+    transform: translateX(-50%);
+}
+.Object-list .PlanetCard .loader span {
+    position: absolute;
+
+    top: 1vmin;
+    left: 1vmin;
+    right: 1vmin;
+    bottom: 1vmin;
+
+    background: var(--clr2);
+    border-radius: 50%;
+}
+
+.Object-list .PlanetCard .PlanetImg {
+    position: absolute;
+
+    width: 22vmin;
+    height: 22vmin;
+
+    background: url("..\\Materials\\Backgrounds\\EarthMap.jpg");
+    background-size: cover;
+    border-radius: 50%;
+
+    box-shadow: inset 0 0 2vmin var(--clr),
+                inset 0 0 6vmin var(--clr);
+
+    animation: planetCardRotate 20s linear infinite;
+}
+@keyframes planetCardRotate {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+
+.Object-list .PlanetCard .MarsIMG {
+    background: url("..\\Materials\\Backgrounds\\Mars.jpg");
+    background-size: cover;
+}
 
 
 @media (max-width: 1200px) {
     #MainPageMenu {
         grid-auto-columns: 1fr; 
+        justify-items: center;
+        align-content: center;
         grid-template-columns: 1.2fr; 
         grid-template-rows: auto auto 0.6fr; 
-        gap: 2px 2px; 
+        gap: 15px 2px; 
         grid-template-areas: 
           "Solar-System"
           "Discription"
@@ -267,5 +472,12 @@
     .Solar-System {
         width: 50vmin;
         height: 50vmin;
+    }
+
+    .Object-list button .fa-caret-right {
+        right: 30vmin;
+    }
+    .Object-list button .fa-caret-left {
+        left: 30vmin;
     }
 }
