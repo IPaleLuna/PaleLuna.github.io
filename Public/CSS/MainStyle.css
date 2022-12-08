@@ -8,10 +8,10 @@
     box-sizing: border-box;
 }
 html {
-    width: 100vw;
+    width: 100%;
 }
 body {
-    width: 100vw;
+    width: 100%;
 
     background-repeat: repeat-y;
     object-fit: cover;
