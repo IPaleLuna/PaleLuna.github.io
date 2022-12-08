@@ -5,20 +5,17 @@ const nxtBtn = document.querySelector("#nxt-btn");
 const preBtn = document.querySelector("#pre-btn");
 
 nxtBtn.addEventListener("click", () => {
-    if(pointer+1 < planets.length) {
-        pointer++;
+    pointer = ((pointer+1 < planets.length) ? ++pointer : 0);
 
-        let nextPlanet = planets[pointer];
-        nextPlanet.classList.add("active");
-    
-        currentPlanet.classList.remove("active");
-        currentPlanet = nextPlanet;
-    }
+    let nextPlanet = planets[pointer];
+    nextPlanet.classList.add("active");
+
+    currentPlanet.classList.remove("active");
+    currentPlanet = nextPlanet;
     
 });
 preBtn.addEventListener("click", () => {
-    if(pointer != 0) {
-        pointer--;
+        pointer = ((pointer-1 >= 0) ? --pointer : planets.length-1);
 
         let prevPlanet = planets[pointer];
         prevPlanet.classList.add("active");
@@ -26,5 +23,4 @@ preBtn.addEventListener("click", () => {
         currentPlanet.classList.remove("active");
         currentPlanet = prevPlanet;
 
-    }
 });

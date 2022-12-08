@@ -312,14 +312,13 @@
     align-self: center;
 
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 
-    width: 27vmin;
+    width: 35vmin;
 
     scroll-behavior: smooth;
 
-    overflow: hidden;
 }
 
 .Object-list .Planets-Container .PlanetCard {
@@ -436,7 +435,6 @@
     width: 22vmin;
     height: 22vmin;
 
-    background: var(--url);
     background-size: cover;
     border-radius: 50%;
 
@@ -453,9 +451,40 @@
         background-position: 200%;
     }
 }
-
+.Object-list .PlanetCard .SunIMG {
+    background: url("..\\Materials\\Backgrounds\\Sun.webp");
+    background-size: cover;
+}
+.Object-list .PlanetCard .MercuryIMG {
+    background: url("..\\Materials\\Backgrounds\\Mercury.webp");
+    background-size: cover;
+}
+.Object-list .PlanetCard .VenusIMG {
+    background: url("..\\Materials\\Backgrounds\\Venus.webp");
+    background-size: cover;
+}
+.Object-list .PlanetCard .EarthIMG {
+    background: url("..\\Materials\\Backgrounds\\Earth.webp");
+    background-size: cover;
+}
 .Object-list .PlanetCard .MarsIMG {
     background: url("..\\Materials\\Backgrounds\\Mars.jpg");
+    background-size: cover;
+}
+.Object-list .PlanetCard .JupiterIMG {
+    background: url("..\\Materials\\Backgrounds\\Jupiter.webp");
+    background-size: cover;
+}
+.Object-list .PlanetCard .SaturnIMG {
+    background: url("..\\Materials\\Backgrounds\\Saturn.webp");
+    background-size: cover;
+}
+.Object-list .PlanetCard .UraniumIMG {
+    background: url("..\\Materials\\Backgrounds\\Uranus.jpg.webp");
+    background-size: cover;
+}
+.Object-list .PlanetCard .NeptuneIMG {
+    background: url("..\\Materials\\Backgrounds\\Neptune.jpg.webp");
     background-size: cover;
 }
 
