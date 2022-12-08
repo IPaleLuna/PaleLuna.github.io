@@ -29,6 +29,8 @@
     
     width: 90vmin;
     height: 90vmin;
+
+    overflow: hidden;
 }
 
 .Solar-System .Sun
