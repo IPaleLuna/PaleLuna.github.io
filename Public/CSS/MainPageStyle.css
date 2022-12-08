@@ -434,7 +434,7 @@
     width: 22vmin;
     height: 22vmin;
 
-    background: url("..\\Materials\\Backgrounds\\EarthMap.jpg");
+    background: var(--url);
     background-size: cover;
     border-radius: 50%;
 
@@ -472,8 +472,8 @@
           "Object-list"; 
     }
     .Solar-System {
-        width: 50vmin;
-        height: 50vmin;
+        width: 100vmin;
+        height: 100vmin;
     }
 
     .Object-list button .fa-caret-right {
