@@ -321,7 +321,7 @@
 }
 
 .Object-list .Planets-Container .PlanetCard {
-    display: flex;
+    display: none;
     flex-direction: column;
 
     position: relative;
@@ -335,6 +335,9 @@
     background-color: var(--clr2);
 
     color: #FFF;
+}
+.Object-list .Planets-Container .PlanetCard.active {
+    display: flex;
 }
 .Object-list .PlanetCard h2 {
     font-size: 4vmin;

@@ -1,17 +1,30 @@
-const planetCards = document.querySelectorAll(".Planets-Container");
+const planets = document.querySelectorAll(".PlanetCard");
+let pointer = 0;
+let currentPlanet = planets[pointer];
 const nxtBtn = document.querySelector("#nxt-btn");
 const preBtn = document.querySelector("#pre-btn");
 
-planetCards.forEach((item, i) => {
-    let containerDimensions = item.getBoundingClientRect();
-    console.log(containerDimensions);
-    let containerWidth = containerDimensions.width;
-    console.log(containerWidth);
+nxtBtn.addEventListener("click", () => {
+    if(pointer+1 < planets.length) {
+        pointer++;
 
-    nxtBtn.addEventListener("click", () => {
-        item.scrollLeft += containerWidth;
-    });
-    preBtn.addEventListener("click", () => {
-        item.scrollLeft -= containerWidth;
-    });
-})
+        let nextPlanet = planets[pointer];
+        nextPlanet.classList.add("active");
+    
+        currentPlanet.classList.remove("active");
+        currentPlanet = nextPlanet;
+    }
+    
+});
+preBtn.addEventListener("click", () => {
+    if(pointer != 0) {
+        pointer--;
+
+        let prevPlanet = planets[pointer];
+        prevPlanet.classList.add("active");
+
+        currentPlanet.classList.remove("active");
+        currentPlanet = prevPlanet;
+
+    }
+});

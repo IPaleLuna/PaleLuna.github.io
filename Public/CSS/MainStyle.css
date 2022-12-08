@@ -7,12 +7,18 @@
 
     box-sizing: border-box;
 }
-
+html {
+    width: 100vw;
+}
 body {
+    width: 100vw;
+
     background-repeat: repeat-y;
     object-fit: cover;
     background-image: url("..\\Materials\\Backgrounds\\Space_Background_V2.jpg");
 
     color: #FFF;
+
+    overflow-x: hidden;
 
 }
