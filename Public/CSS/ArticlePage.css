@@ -42,6 +42,8 @@
     height: 100%;
 }
 
+/*-------------------------------Содержание-------------------------------*/
+
 .Contents-table {
     position: relative;
 
@@ -63,7 +65,9 @@
 #openList:checked ~ .table-Header  {
     border-bottom: 2px solid var(--clr);
 }
-
+#openList:checked ~ #openListBtn {
+    transform: rotate(180deg);
+}
 #openListBtn {
     float: right;
 
@@ -76,7 +80,7 @@
 
     cursor: pointer;
 
-    transition: 0.2s ease;
+    transition: 0.3s ease;
 }
 
 .Contents-table .table-Header {
@@ -114,4 +118,25 @@
     font-weight: 500;
 
     opacity: 0.5;
+}
+.Contents-table .elements .content-list li a { transition: all 0.5s ease; }
+.Contents-table .elements .content-list li a:hover { color: #E47676; }
+
+/*-------------------------------Информационная карточка-------------------------------*/
+
+#Information-card {
+    float: right;
+
+    width: 35%;
+    height: auto;
+
+    padding: 20px;
+
+    border: 1px solid var(--clr);
+}
+#Information-card-table {
+    width: 100%;
+}
+#Information-card #Information-card-table thead tr th {
+    text-align: center;
 }
