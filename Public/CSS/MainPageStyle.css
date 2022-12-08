@@ -468,7 +468,7 @@
     background-size: cover;
 }
 .Object-list .PlanetCard .MarsIMG {
-    background: url("..\\Materials\\Backgrounds\\Mars.jpg");
+    background: url("..\\Materials\\Backgrounds\\Mars.webp");
     background-size: cover;
 }
 .Object-list .PlanetCard .JupiterIMG {
