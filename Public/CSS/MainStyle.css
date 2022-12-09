@@ -8,6 +8,8 @@
     color: #FFF;
 
     box-sizing: border-box;
+
+    scroll-behavior: smooth;
 }
 html {
     width: 100%;
@@ -22,5 +24,4 @@ body {
     color: #FFF;
 
     overflow-x: hidden;
-
 }

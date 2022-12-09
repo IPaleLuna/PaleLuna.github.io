@@ -6,7 +6,8 @@
     max-width: none;
     min-width: 770px;
     width: 80%;
-    height: 100vh;
+
+    height: fit-content;
 
     margin: 250px auto;
 
@@ -48,7 +49,7 @@
 .Contents-table {
     position: relative;
 
-    width: 300px;
+    max-width: 350px;
     height: auto;
 
     border: 2px solid var(--clr);
@@ -86,7 +87,7 @@
 
 .Contents-table .table-Header {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 3vmin;
 
     padding: 18px;
 
@@ -95,10 +96,12 @@
     transition: all 0.5s;
 }
 .Contents-table .elements {
+    width: 100%;
     height: 0;
     overflow: hidden;
 }
 .Contents-table .elements .content-list {
+    width: 100%;
     padding: 18px;
 }
 .Contents-table .elements .content-list li {
@@ -107,17 +110,17 @@
     
     padding: 5px;
 
-    font-size: 18px;
+    font-size: 2.5vmin;
 }
 .Contents-table .elements .content-list li span {
     margin-right: 10px;
 
-    font-size: 21px;
+    font-size: 2.8vmin;
     font-weight: 500;
 
     opacity: 0.5;
 }
-.Contents-table .elements .content-list li a { transition: all 0.5s ease; }
+.Contents-table .elements .content-list li a {transition: all 0.5s ease;}
 .Contents-table .elements .content-list li a:hover { color: #E47676; }
 
 /*-------------------------------Информационная карточка-------------------------------*/
@@ -125,16 +128,71 @@
 #Information-card {
     float: right;
 
-    width: 300px;
+    width: 450px;
     height: auto;
 
+    margin: 0 0 15px 15px;
     padding: 20px;
+
 
     border: 1px solid var(--clr);
 }
 #Information-card-table {
     width: 100%;
 }
-#Information-card #Information-card-table thead tr th {
+
+#Information-card-table .table-Header {
+    background: var(--bcgClr);
+    font-size: 2vmin;
+
+}
+#Information-card-table .table-Header th {
+    padding: 15px;
+
+    font-size: 3.5vmin;
+    color: var(--fntClr);
+}
+
+#Information-card-table .cardIMG {
+    
+    height: fit-content;
+    padding-top: 15px;
+
+
+    font-size: 2vmin;
+    letter-spacing: 0.2em;
+
     text-align: center;
+}
+#Information-card-table .cardIMG img
+{
+    width: 100%;
+}
+#Information-card-table .cardIMG span {
+    display: block;
+    margin-top: 10px;
+}
+
+/*-------------------------------ОСНОВНОЙ КОНТЕНТ-------------------------------*/
+
+.theme-content {
+    margin-bottom: 30px;
+}
+
+.theme-content h3 {
+    font-size: 3.5vmin;
+    font-weight: 600;
+
+    margin-bottom: 25px;
+}
+.theme-content h3 hr {
+    margin-top: 5px;
+    opacity: 0.5;
+}
+
+.theme-content p {
+    margin: 15px 0;
+
+    font-size: 2vmin;
+    line-height: 1.4em;
 }
