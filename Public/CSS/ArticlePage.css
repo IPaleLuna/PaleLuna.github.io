@@ -4,11 +4,11 @@
     position: relative;
 
     max-width: none;
-    width: 80%;
+    width: 75%;
 
     height: fit-content;
 
-    margin: 250px auto;
+    margin: 15% auto;
 
     font-family: 'Source Sans Pro', sans-serif;
 
@@ -81,16 +81,12 @@
     color: rgb(255, 255, 255); /*Изменить*/
 
     cursor: pointer;
-
+    
     transition: 0.3s ease;
 }
 
 .Contents-table .table-Header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    height: 100%;
+    height: 80px;
  
     padding: 18px;
 
@@ -99,6 +95,10 @@
     transition: all 0.5s;
 }
 .Contents-table .table-Header h3{
+
+    display: flex;
+    align-items: center;
+
     font-weight: 600;
     font-size: 3.5vmin;
 
@@ -111,7 +111,7 @@
 }
 .Contents-table .elements .content-list {
     width: 100%;
-    padding: 18px;
+    padding: 1.8vmin;
 }
 .Contents-table .elements .content-list li {
     width: 100%;
@@ -141,7 +141,7 @@
     height: auto;
 
     margin: 0 0 15px 15px;
-    padding: 15px 20px;
+    padding: 1.5vmin 2vmin;
 
 
     border: 1px solid var(--clr);
@@ -153,12 +153,12 @@
     border-spacing: 10px 7px ;
 }
 
-#Information-card-table .table-Header {
+#Information-card-table .info-table-Header {
     background: var(--bcgClr);
     font-size: 2vmin;
 
 }
-#Information-card-table .table-Header th {
+#Information-card-table .info-table-Header th {
     padding: 15px;
 
     font-size: 3.5vmin;
@@ -166,7 +166,6 @@
 }
 
 #Information-card-table .cardIMG {
-    
     height: fit-content;
     padding-top: 15px;
 
@@ -226,7 +225,8 @@
 .theme-content p {
     margin: 15px 0;
 
-    font-size: 2vmin;
+    font-size: 2.1vmin;
+    
     line-height: 1.4em;
 }
 
@@ -242,13 +242,13 @@
     width: fit-content;
     height: fit-content;
 
-    padding: 15px;
+    padding: 1.5vmin;
 
     background: #2E0249;
 }
 .IMG-Content span{
-    margin-top: 15px;
-    font-size: 2.5vmin;
+    margin-top: 1.5vmin;
+    font-size: 2vmin;
 
     text-align: center;
 }
@@ -261,5 +261,14 @@
 @media (max-width: 1015px) {
     .resizable-section {
         width: 95%;
+    }
+}
+@media (max-width: 818px) {
+    
+    #Information-card {
+        float: none;
+
+        margin-left: auto;
+        margin-right: auto;
     }
 }
