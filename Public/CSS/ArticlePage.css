@@ -260,6 +260,7 @@
 }
 .IMG-Content.Left {float: left; margin-right: 15px;}
 .IMG-Content.Right {float: right; margin-left: 15px;}
+.IMG-Content.MaxSize {max-width: fit-content;}
 
 @media (max-width: 1015px) {
     .resizable-section {
