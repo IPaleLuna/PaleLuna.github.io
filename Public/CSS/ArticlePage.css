@@ -137,13 +137,16 @@
     height: auto;
 
     margin: 0 0 15px 15px;
-    padding: 20px;
+    padding: 15px 20px;
 
 
     border: 1px solid var(--clr);
 }
 #Information-card-table {
     width: 100%;
+
+    border-collapse: separate;
+    border-spacing: 0 5px ;
 }
 
 #Information-card-table .table-Header {
@@ -222,3 +225,28 @@
     font-size: 2vmin;
     line-height: 1.4em;
 }
+
+.IMG-Content {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+
+    max-width: 450px;
+    width: fit-content;
+    height: fit-content;
+
+    padding: 15px;
+
+    background: #2E0249;
+}
+.IMG-Content span{
+    margin-top: 15px;
+}
+.IMG-Content img{
+    width: 100%;
+}
+.IMG-Content.Left {float: left; margin-right: 15px;}
+.IMG-Content.Right {float: right; margin-left: 15px;}
