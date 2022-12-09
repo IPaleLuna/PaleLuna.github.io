@@ -4,7 +4,6 @@
     position: relative;
 
     max-width: none;
-    min-width: 770px;
     width: 80%;
 
     height: fit-content;
@@ -50,6 +49,7 @@
     position: relative;
 
     max-width: 350px;
+    width: 60vmin;
     height: auto;
 
     border: 2px solid var(--clr);
@@ -89,16 +89,20 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
- 
-    font-weight: 600;
-    font-size: 30px;
 
+    height: 100%;
+ 
     padding: 18px;
 
-    text-align: center;
     border-bottom: 2px solid rgba(255, 255, 255, 0);
 
     transition: all 0.5s;
+}
+.Contents-table .table-Header h3{
+    font-weight: 600;
+    font-size: 3.5vmin;
+
+    height: 100%;
 }
 .Contents-table .elements {
     width: 100%;
@@ -234,7 +238,7 @@
     align-items: center;
 
 
-    max-width: 450px;
+    max-width: 45vmin;
     width: fit-content;
     height: fit-content;
 
@@ -244,9 +248,18 @@
 }
 .IMG-Content span{
     margin-top: 15px;
+    font-size: 2.5vmin;
+
+    text-align: center;
 }
 .IMG-Content img{
     width: 100%;
 }
 .IMG-Content.Left {float: left; margin-right: 15px;}
 .IMG-Content.Right {float: right; margin-left: 15px;}
+
+@media (max-width: 1015px) {
+    .resizable-section {
+        width: 95%;
+    }
+}
