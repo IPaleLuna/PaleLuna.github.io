@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Source+Sans+Pro&family=Ubuntu&display=swap');
+
+.resizable-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    position: relative;
+
+    max-width: none;
+    width: 75%;
+
+    height: 100vh;
+
+    margin: 15% auto;
+
+
+}
+
+.separator-container {
+    height: 50px;
+}
+
+.page {
+    width: 80%;
+    height: fit-content;
+
+    padding: 2.4vmin 3.6vmin;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    
+    background: #100720;
+    color: #fff;
+}
+
+.page .Page-Header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4vmin;
+
+    width: 75%;
+    padding-bottom: 2px;
+
+    border-bottom: 1px solid #fff;
+
+    margin-bottom: 2.5vmin;
+}
+
+.page-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.page-content .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 2vmin;
+    
+    text-align:justify;
+    font-size: 2.5vmin;
+}
+.page-content .text-content h4
+{
+    font-size: 3vmin;
+    font-weight: 600;
+    
+    padding: 0.5vmin 0 2.5vmin 0;
+    
+    opacity: 0.5;
+}
+.page-content .text-content p {
+    padding: 0.5vmin;
+}
+.page-content .text-content a {
+    font-style: italic;
+    
+    color: #E47676;
+}
+@media (max-width: 1015px) {
+    .resizable-section {
+        width: 95%;
+    }
+}
