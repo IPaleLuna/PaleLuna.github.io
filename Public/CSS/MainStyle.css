@@ -22,7 +22,7 @@ html {
 body {
     width: 100%;
 
-    background-repeat: repeat-y;
+    background-repeat: repeat;
     object-fit: cover;
     background-image: url("..\\Materials\\Backgrounds\\Space_Background_V2.webp");
 
