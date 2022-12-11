@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+#MainPageMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: none;
+    width: 75%;
+    min-height: 100vh;
+
+    margin: 15% auto;
+    padding: 3vmin;
+
+    background: #100720;
+
+    font-family: "Poppins", sans-serif;
+}
+
+.grid {
+  display: grid;
+  width: 95%;
+  grid-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+}
+
+.grid-item {
+    width: 100%;
+    overflow: hidden;
+
+    background-color: #001F3F;
+    cursor: pointer;
+
+    border-radius: 1.5vh;
+
+    transition: 0.2s;
+}
+
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  height: 25vh;
+
+  object-fit:cover;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    justify-content: space-between;
+
+    padding: 3vmin;
+    min-height: 45vh;
+}
+
+.card-header {
+  font-size: 5vh;
+  font-weight: 500;
+
+  color: #c2cffc;
+  
+  margin-bottom: 1.5rem;
+}
+
+.card-text {
+    margin-bottom: 2.5rem;
+
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+
+    font-size: 2vh;
+    
+    color: #F4F4EC;
+}
+.card-text b {
+    color: #76E2F4;
+}
+
+.card-content .card-btn {
+    justify-content: flex-end;
+
+    display: block;
+    width: 100%;
+    padding: 1.5vh;
+  
+    font-size: 2vh;
+    
+    text-align: center;
+    letter-spacing: 0.1rem;
+
+    color: #3363ff;
+    background-color: #d8e0fd;
+
+    border: none;
+    border-radius: 0.4rem;
+
+    transition: 0.2s;
+
+    cursor: pointer;
+}
+
+.card-btn span {
+  margin-left: 1rem;
+  transition: 0.2s;
+  color: #3363ff;
+}
+
+.card-btn:hover,
+.card-btn:active {
+  background-color: #c2cffc;
+}
+
+.card-btn:hover span,
+.card-btn:active span {
+  margin-left: 1.5rem;
+}
+
+@media (max-width: 1015px) {
+    #MainPageMenu {
+        width: 95%;
+    }
+    .grid {
+        grid-gap: 3rem;
+      }
+}
