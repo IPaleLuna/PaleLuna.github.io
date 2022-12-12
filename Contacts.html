@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" type="text/css" href="Public\CSS\MainStyle.css">
-        <link rel="stylesheet" type="text/css" href="Public\CSS\ArticlePage.css">
+        <link rel="stylesheet" type="text/css" href="Public\CSS\AdditionalPagesStyle.css">
 
         <script src="https://kit.fontawesome.com/18eb935c38.js" crossorigin="anonymous"></script>
 
@@ -39,16 +39,46 @@
         <section class="resizable-section">
             <div class="page">
                 <main class="mainPage">
-                    <div class="separator-container"></div>
                     <div class="Page-Header">
                         <h1 class="title">Контакты</h1>
                     </div>
                     <div class="page-content">
                         <div class="text-content">
-                           <p>Вы можете с нами связаться через социлальные сети</p>
-                        </div>
-                        <div class="recomended-content">
+                            <h4>Контакты</h4>
+                            <p>Если у Вас возникли вопросы и предложения, то Вы можете направить письмо на нашу электронную почту: <a href="mailto:PROkosmos@not.exist">PROkosmos@not.exist</a></p>
+                            <p>Для того, чтобы следить за развитием проекта и, возможно, внести свой вклад в него, предлагаем посетить GitHub разработчика: <a href="https://github.com/PaleLuna">PaleLuna</a></p>
 
+                            <h4>Оставьте отзыв</h4>
+                            <section id="Rating">
+                                <div class="container">
+                                    <div class="post">
+                                        <div class="textRating">Спасибо за Ваш отзыв!</div>
+                                        <div class="edit">ИЗМЕНИТЬ</div>
+                                    </div>
+                                    <div class="star-widget">
+                                        <input type="radio" name="rate" id="rate-5">
+                                        <label for="rate-5" class="fas fa-star"></label>
+                                        <input type="radio" name="rate" id="rate-4">
+                                        <label for="rate-4" class="fas fa-star"></label>
+                                        <input type="radio" name="rate" id="rate-3">
+                                        <label for="rate-3" class="fas fa-star"></label>
+                                        <input type="radio" name="rate" id="rate-2">
+                                        <label for="rate-2" class="fas fa-star"></label>
+                                        <input type="radio" name="rate" id="rate-1">
+                                        <label for="rate-1" class="fas fa-star"></label>
+                                        
+                                        <form action="#">
+                                            <header></header>
+                                            <div class="textarea">
+                                            <textarea cols="30" placeholder="Опишите Ваши ощущения..."></textarea>
+                                            </div>
+                                            <div class="btn">
+                                            <button type="submit" id="ratingSubmit">Отправить</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                           </section>
                         </div>
                     </div>
                 </main>
@@ -58,7 +88,7 @@
         <footer>
             <div class="footer-container">
                 <h3>ПРОкосмос</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae laborum aut sint corporis eum.</p>
+                <p>Сайт несет лишь информационный характер и является лишь результатом курсовой работы. При возникновении вопросов, просьба обращаться к создателю - студенту РТУ МИРЭА, группа ИКБО-33-21, Мкртчяну Роберту Ашотовичу</p>
                 <ul class="contacts-socials">
                     <li><a href="https://vk.com/redstar_oc" target="_blank"><i class="fa-brands fa-vk"></i></a></li>
                     <li><a href="https://t.me/RobertMkrt4yan" target="_blank"><i class="fa-brands fa-telegram"></i></a></li>
@@ -66,11 +96,11 @@
                 </ul>
             </div>
             <div class="footer-bottom">
-                <p>Copyright &copy;2022 Robert Mkrtchian</p>
+                <p>Copyright &copy;2022 Student MIREA. ALL RIGHTS RESERVED</p>
             </div>
         </footer>
         
 
-        <script src="Public\JS\CarouselSlider.js"></script>
+        <script src="Public\JS\RaitingScript.js"></script>
     </body>
 </html>

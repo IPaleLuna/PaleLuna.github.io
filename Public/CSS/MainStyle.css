@@ -22,7 +22,7 @@ html {
 body {
     width: 100%;
 
-    background-repeat: repeat-y;
+    background-repeat: repeat;
     object-fit: cover;
     background-image: url("..\\Materials\\Backgrounds\\Space_Background_V2.webp");
 
@@ -110,7 +110,8 @@ body {
     transition: 0.5s;
 }
 
-#Havigation ul li .active, nav ul li a:hover {
+#Havigation ul li .active, 
+nav ul li a:hover {
     background: #8F1383; /*Изменить*/
 }
 #menuBars {
@@ -181,7 +182,8 @@ body {
         display: block;
     }
 
-    nav ul li .active, nav ul li a:hover {
+    #Havigation ul li .active, 
+    #Havigation ul li a:hover {
         background: none;
         color: #8F1383;
     }
@@ -238,11 +240,12 @@ footer {
     line-height: 3rem;
 }
 .footer-container p {
-    max-width: 500px;
+    max-width: 1000px;
     margin: 5px auto;
     line-height: 28px;
-    font-size: 16px;
+    font-size: 13px;
 
+    opacity: 0.5;
 }
 .footer-container .contacts-socials {
     display: flex;
@@ -263,7 +266,7 @@ footer {
 
 }
 .footer-container .contacts-socials a:hover i{
-    color: aqua;
+    color: #6A0572;
 }
 
 .footer-bottom {
